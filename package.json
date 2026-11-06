@@ -1,0 +1,11 @@
+{
+  "name": "guspira-events",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Guspira Events: peticiones de canciones con Spotify y presupuestos de pirotecnia.",
+  "scripts": {
+    "start": "node server.cjs",
+    "test": "node test.cjs"
+  },
+  "engines": { "node": ">=18" }
+}
