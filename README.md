@@ -3,7 +3,7 @@
 > **Demo online:** https://tochick.github.io/Guspira-3.0/ (GitHub Pages, carpeta `docs/`).
 > Se abre desde cualquier móvil; guarda los datos en ese navegador y simula Spotify. Contraseña del panel en la demo: `guspira2026`.
 >
-> Para activarla la primera vez: **Settings → Pages → Build and deployment → Source: «Deploy from a branch» → Branch: `main` / `docs` → Save**.
+> Para activarla la primera vez: **Settings → Pages → Build and deployment → Source: «GitHub Actions»** (el flujo `pages.yml` publica la carpeta `docs/`). También funciona «Deploy from a branch» con `main` / `docs`.
 > Si cambias el código, regenera la demo con `node demo/build-demo.cjs` y sube también la carpeta `docs/`.
 
 ## Novedades de la versión profesional
