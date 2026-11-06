@@ -1,15 +1,10 @@
 # Guspira Events · plataforma web
 
-> **Demo online:** cada vez que se sube a `main`, GitHub Actions publica una demostración completa en GitHub Pages (`https://<usuario>.github.io/<repositorio>/`). La demo funciona en el navegador, guarda los datos en ese navegador y simula Spotify. Contraseña del panel en la demo: `guspira2026`.
+> **Demo online:** https://tochick.github.io/Guspira-3.0/ (GitHub Pages, carpeta `docs/`).
+> Se abre desde cualquier móvil; guarda los datos en ese navegador y simula Spotify. Contraseña del panel en la demo: `guspira2026`.
 >
-> Para activarla la primera vez: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-
-Web para **Guspira Events** (bodas, babyshowers y celebraciones) con dos servicios:
-
-1. **Peticiones de canciones con Spotify**: los invitados buscan en Spotify (o escriben la canción a mano), la piden con una dedicatoria y votan las de los demás. El administrador aprueba, rechaza, marca como sonada y envía las canciones a la **cola de Spotify** o a una **playlist del evento**.
-2. **Presupuestos de pirotecnia fría**: fuente vertical, abanico, cascada de chispas, bengalas, humo de color (revelaciones) y cañón de confeti. El cliente elige cantidad, color y duración, ve el precio al momento y envía la solicitud con su presupuesto numerado (`GP-2026-0001`), imprimible o guardable en PDF.
-
-Servidor Node.js **sin dependencias** (Node 18 o superior). Los datos se guardan en `data/db.json`.
+> Para activarla la primera vez: **Settings → Pages → Build and deployment → Source: «Deploy from a branch» → Branch: `main` / `docs` → Save**.
+> Si cambias el código, regenera la demo con `node demo/build-demo.cjs` y sube también la carpeta `docs/`.
 
 ## Novedades de la versión profesional
 

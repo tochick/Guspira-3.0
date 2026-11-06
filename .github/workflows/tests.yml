@@ -1,9 +1,8 @@
 name: Pruebas
 
 on:
-  pull_request:
   push:
-    branches-ignore: [main]
+  pull_request:
 
 permissions:
   contents: read
@@ -17,4 +16,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node test.cjs
+      - name: Pruebas de la API
+        run: node test.cjs
+      - name: La demo de docs/ está al día
+        run: |
+          node demo/build-demo.cjs
+          git diff --exit-code -- docs/ || (echo "Regenera la demo con: node demo/build-demo.cjs" && exit 1)

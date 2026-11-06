@@ -46,7 +46,7 @@ fs.writeFileSync(out, html);
 console.log(`${out} (${Math.round(html.length / 1024)} KB)`);
 
 // Versión como página completa para publicarla en GitHub Pages (enlace público para el móvil).
-const siteDir = path.join(root, 'demo', 'site');
+const siteDir = path.join(root, 'docs');
 fs.mkdirSync(siteDir, { recursive: true });
 const cut = html.indexOf('</style>') + '</style>'.length;
 const headPart = html.slice(0, cut);
@@ -70,4 +70,4 @@ ${bodyPart}
 fs.writeFileSync(path.join(siteDir, 'index.html'), page);
 fs.copyFileSync(path.join(root, 'public', 'apple-touch-icon.png'), path.join(siteDir, 'apple-touch-icon.png'));
 fs.writeFileSync(path.join(siteDir, '.nojekyll'), '');
-console.log(`${path.join(siteDir, 'index.html')} (página completa para GitHub Pages)`);
+console.log(`${path.join(siteDir, 'index.html')} (página completa: GitHub Pages sirve la carpeta docs/)`);

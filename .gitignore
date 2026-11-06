@@ -2,5 +2,4 @@ data/
 .env
 node_modules/
 demo/guspira-demo.html
-demo/site/
 *.log
